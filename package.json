@@ -1,0 +1,39 @@
+{
+    "name": "mun-syntax",
+    "displayName": "Mun syntax",
+    "description": "Syntax highlighting for the Mun language",
+    "publisher": "Aloso",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Aloso/mun-syntax"
+    },
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "mun",
+                "aliases": [
+                    "Mun",
+                    "mun"
+                ],
+                "extensions": [
+                    ".mun"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "mun",
+                "scopeName": "source.mun",
+                "path": "./syntaxes/mun.tmLanguage.json"
+            }
+        ]
+    }
+}
